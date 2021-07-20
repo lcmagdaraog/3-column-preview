@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+    //Primary
+
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+
+//Neutral
+//(paragraphs)
+--Transparent-white : hsla(0, 0%, 100%, 0.75);
+//(background, headings, buttons)
+--Very-light-gray : hsl(0, 0%, 95%);
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ body{
+     font-family: "Lexend Deca", sans-serif;
+     font-size: 15px;
+     background-color: var(--Very-light-gray);
+     
+ }
+
+ .container{
+     padding: 50px 30px ;
+     display: flex;
+     flex-direction: column ;
+    align-items: center;
+ }
+.orange{
+    background-color: var(--Bright-orange);
+    border-radius: 10px 10px 0 0;
+
+    input{
+        color: var(--Bright-orange);
+       
+    }
+    p{
+        margin-bottom: 20px;
+    }
+
+}
+.cyan{
+    background-color: var(--Dark-cyan);
+    input{
+        color: var(--Dark-cyan);
+    }
+    p{
+        margin-bottom: 20px;
+    }
+}
+.dark-cyan{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 0 10px 10px ;
+    input{
+        color: var(--Very-dark-cyan);
+    }
+    p{
+        margin-bottom: 20px;
+    }
+}
+.card{
+    height: 400px;
+    width: 300px;
+    padding: 30px 40px 30px 30px;
+
+    .icon{
+        margin-bottom: 20px;
+    }
+    h1{
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+        
+    }
+    p{
+        font-size: 15px;
+       
+        line-height: 2;
+        color: var(--Very-light-gray);
+       
+        
+    }
+    input{
+         width: 130px; 
+         height: 40px;  
+         border-radius: 20px;
+         border: none;
+         cursor: url("./images/cursor.cur"), auto;
+         
+    }
+}
+h1{
+    font-family: "Big Shoulders Display", cursive ;
+    font-weight: 700;
+}
+@media screen and (min-width: 900px) {
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      
+    }
+    .orange{
+        border-radius: 10px 0 0 10px;
+    }
+    .dark-cyan{
+        border-radius: 0 10px 10px 0;
+    }
+}
